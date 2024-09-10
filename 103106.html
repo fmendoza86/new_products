@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Especificaciones</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background: #f2f2f2;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            max-width: 900px;
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            max-width: 200px;
+            margin-bottom: 20px;
+        }
+
+        .product-title {
+            text-align: center;
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .product-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-images {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .main-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .thumbnail-container {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .thumbnail {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .thumbnail:hover {
+            transform: scale(1.1);
+        }
+
+        .product-details {
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .description,
+        .specs {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .specs ul {
+            list-style: none;
+            color: #333;
+        }
+
+        .specs ul li {
+            padding: 5px 0;
+        }
+
+        .section-attribute {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media (min-width: 768px) {
+            .product-container {
+                flex-direction: row;
+                gap: 20px;
+            }
+            .product-images {
+                flex: 1;
+            }
+            .product-details {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="https://www.familiabercomat.com/on/demandware.static/Sites-FB-Site/-/default/dwa4cfa863/images/logo-small.svg" alt="Logo de Familia Bercomat" class="logo">
+        <h1 class="product-title">Ceramica Beige Cañuelas Corcega 43X43 | Codigo: 103106 </h1>
+    </div>
+<div class="product-container">
+    <!-- Sección de Imágenes -->
+    <div class="product-images">
+        <img id="mainImage" src="https://www.familiabercomat.com/on/demandware.static/-/Sites-FBM/default/dw3717da28/images/large/103106_0.jpg" alt="Ceramica Beige Cañuelas Corcega 43X43" class="main-image">
+        
+        <div class="thumbnail-container">
+             <img src="https://www.familiabercomat.com/on/demandware.static/-/Sites-FBM/default/dw3717da28/images/large/103106_0.jpg" alt="Imagen 1" class="thumbnail" onclick="changeImage(this)">
+            <img src="https://www.familiabercomat.com/on/demandware.static/-/Sites-FBM/default/dweb2690bf/images/large/103106_1.jpg" alt="Imagen 1" class="thumbnail" onclick="changeImage(this)">
+            <img src="https://www.familiabercomat.com/on/demandware.static/-/Sites-FBM/default/dw12407f93/images/large/103106_2.jpg" alt="Imagen 1" class="thumbnail" onclick="changeImage(this)">
+
+        </div>
+    </div>
+        <div class="product-details">
+        <!-- <div class="description">
+                <h2>Descripción</h2>
+                <p>Diseño clásico con acabado brillante que le confiere un aire atemporal haciéndolo perdurable al paso del tiempo. Además, el brillo aumenta la sensación de luminosidad, por lo que es ideal si el espacio a cubrir tiene poca luz.</p>
+            </div>--> 
+            <div class="specs">
+
+<div class="container main-details">
+            
+            <div class="description-and-detail col-12 col-md-6 container containers">
+    
+
+    
+
+    <div class="row details container">
+        <div class="section-detail-description ">
+            <div class="container-detail-description">
+                <div class="container-detail selected-item">
+                    <h2 class="title-detail" id="specifications">
+                        Especificaciones
+                    </h2>
+                </div>
+                <div class="section-description">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="text-details">
+            
+    <div class="col-12 value content mx-auto content-specifications"
+        id="collapsible-attributes-1">
+        
+            
+                <div class="details-specifications">
+                    <h3 class="attribute-name">
+                        Pisos y Revestimientos
+                    </h3>
+                    <ul>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Aspecto o Superficie</span>
+                                    
+                                        <span class="value">Liso</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Borde</span>
+                                    
+                                        <span class="value">Sin Rectificar</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Calidad</span>
+                                    
+                                        <span class="value">Primera</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Color</span>
+                                    
+                                        <span class="value">Beige</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Dise&ntilde;o</span>
+                                    
+                                        <span class="value">Simil Marmol</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Formato</span>
+                                    
+                                        <span class="value">Mediano</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">L&iacute;nea</span>
+                                    
+                                        <span class="value">Corcega</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">M2 por Caja</span>
+                                    
+                                        <span class="value">2.2</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">M2 por Pallet</span>
+                                    
+                                        <span class="value">105.6</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Marca</span>
+                                    
+                                        <span class="value">Ca&ntilde;uelas</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Material</span>
+                                    
+                                        <span class="value">Cer&aacute;mico</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Medidas</span>
+                                    
+                                        <span class="value">43x43</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Origen</span>
+                                    
+                                        <span class="value">Argentina</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Peso por Caja (Kg)</span>
+                                    
+                                        <span class="value">33.0</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Peso por m2 (Kg)</span>
+                                    
+                                        <span class="value">15.0</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Placas por Caja</span>
+                                    
+                                        <span class="value">12</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Terminaci&oacute;n</span>
+                                    
+                                        <span class="value">Brillante</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Tipo de Tr&aacute;nsito</span>
+                                    
+                                        <span class="value">Normal</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Usos</span>
+                                    
+                                        <span class="value">Interior</span>
+                                    
+                                </div>
+                            </li>
+                        
+                            <li class="attribute-values">
+                                <div class="section-attribute">
+                                    <span class="label">Variaci&oacute;n</span>
+                                    
+                                        <span class="value">Ligera</span>
+                                    
+                                </div>
+                            </li>
+                        
+                    </ul>
+                </div>
+            
+        
+    </div>
+
+        </div>
+        
+    <script>
+        function changeImage(element) {
+            document.getElementById("mainImage").src = element.src;
+        }
+    </script>
+</body>
+</html>
